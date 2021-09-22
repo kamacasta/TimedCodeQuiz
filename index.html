@@ -42,11 +42,25 @@
             <span class="answers"></span>
         </section>
         <!-- Results of the answered question -->
-        <section class="results">
+        <section class="notify">
             <p class="correct"><strong>Correct :)</strong></p>
             <p class="incorrect"><em>Incorrect :(</em></p>
         </section>
+        <!-- Quiz ends and tester is prompted -->
+        <section class="endResults">
+            <h1 class="gag"><strong><em>Mouses down!</em></strong></h1>
+            <p class="complete"><em>The moment of truth, enter your intials to see your score...</em></p>
+            <!-- Form created for tester to input there initials for score -->
+            <form>
+                <p class="intials">Initials here please:</p>
+                <input id="initalsInput">
+            <!-- Button for submitting quiz scores -->
+                <button id="submitScore" type="button">Submit</button>
+            </form>
+            <!-- Form ends -->
+        </section>
     </main>
+    <script src="./assets/script/javascript.js"></script>
     
 
 </body>
