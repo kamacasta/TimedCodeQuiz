@@ -9,4 +9,9 @@ const notify = document.querySelector('.notify');
 const correct = document.querySelector('.correct')
 const incorrect = document.querySelector('.incorrect')
 const initials = document.querySelector('initialsInput')
+const submit = document.querySelector('#submitScore')
+
+// Event Listners
+initTest.addEventListener('click', start);
+submit.addEventListener('click', scoreSubmit)
 
