@@ -1,1 +1,13 @@
 /* Universal styles */
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+/* Variables created for color scheme */
+:root {
+    --primary: #000000;
+    --secondary: #1E90FF;
+    --accent: #F5F5F5;
+}
