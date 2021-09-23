@@ -116,7 +116,20 @@ main section form input {
 /* end of quiz styles */
 
 /* Quiz results styles */
-.complete {
+.gag {
     padding-bottom: 0px;
     font-size: 40px;
+}
+.endResults {
+    display: none;
+    padding: 0;
+    width: 60%;
+    text-align: start;
+    line-height: 1.7;
+}
+.complete, .initals {
+    font-size: 24px;
+}
+.submitScore {
+    font-size: 20px;
 }
