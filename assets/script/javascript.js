@@ -76,8 +76,18 @@ function answersResults(event) {
 }
 
 function newQuestion () {
-    
+    while(answerBtn.firstChild) {
+        answerBtn.removeChild(answerBtn.firstChild);
+    }
+    if (questionOn < question.length) {
+        currentQuestionOn(question[questionOn++])
+        // But if the quizer gets all the answers right and there is no more questions
+    } else {
+        gameOver()
+    }
 }
+
+
 
 
 
