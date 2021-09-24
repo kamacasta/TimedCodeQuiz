@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links for google font used and linking css to html -->
     <link href="./assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Timed Code Quiz</title>
 </head>
@@ -15,19 +16,24 @@
     <header>
         <!-- High score links and and time left  -->
         <a href="./scoreboard.html"><strong>Scoreboard</strong></i></a>
-        <p class="timer"><span><i class="fal fa-clock"></i></span>:0</p>
+        <p class="timer"><i id="clock" class="fal fa-clock"></i>:0</p>
         <!-- When there is no time left or questions all answered  -->
         <p class="gameOver">Game Over!</i></p>
     </header>
     <!-- Main will contain the introduction, questions, and the final score -->
     <main>
-        <section class="introduction">
+        <section class="introduction has-text-centered card section">
             <!-- Introduction explaining the quiz -->
-            <h1><strong><em>Time Code Quiz</em></strong></h1>
-            <p> Answer the following questions within the time limit, also dont freak out but every wrong answer will take time away!</p>
-            <button id="initiateTest">
-                Start
-            </button>
+            <div class="card-content box">
+                <div class="content">
+                    <h1 class="box is-half"><strong><em>Time Code Quiz</em></strong></h1>
+                    <p> Answer the following questions within the time limit, also dont freak out but every wrong answer will
+                        take time away!</p>
+                    <button id="initiateTest">
+                        Start
+                    </button>
+                </div>
+            </div>
         </section>
         <!-- Quiz questions begin -->
         <section class="quiz">

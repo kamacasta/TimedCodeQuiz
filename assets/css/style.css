@@ -1,10 +1,4 @@
 /* Universal styles */
-*,*::before, *::after {
-    /* box-sizing: border-box;
-    margin: auto; */
-    /* padding: 5px; */
-    font-family: Arial, Helvetica, sans-serif;
-}
 /* Variables created for color scheme */
 :root {
     --primary: #000000;
