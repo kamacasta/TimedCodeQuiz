@@ -9,14 +9,17 @@
 </head>
 <body>
     <!-- Scoreboard section  -->
-    <main class="scoreboard">
-        <h1>Scoreboard</h1>
-        <div id="topQuizScores"></div>
-        <section class="removeScores">
+    <main class="scoreboard section has-text-centered">
+        <h1 class="title">Scoreboard</h1>
+        <div class="box" id="topQuizScores"></div>
+        <section class="removeScores section">
             <!-- button to return to index.html -->
-            <button class="return" type="button"><i class="far fa-long-arrow-alt-left"></i></button>
+            <button class="return button is-info" type="button">
+                return<i class="far fa-long-arrow-alt-left"></i>
+            </button>
             <!-- button created to delete listed scores -->
-            <button class="delete is-danger">Embarrased?Dele...</button>
+            <button id="delete" class="button has-background-danger" type="button">Embarrased?Dele...
+            </button>
         </section>
     </main>
     <script src="assets/script/scoreboard.js"></script>
