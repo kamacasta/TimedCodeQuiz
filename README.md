@@ -25,7 +25,7 @@ had to comment out window.location on the submit button at the end of the quiz d
 
 ## Usage 
 
-
+[TimedCodeQuizImage](assets/images/QuizImage.png)
 
 ## License 
 
