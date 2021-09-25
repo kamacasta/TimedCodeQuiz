@@ -10,7 +10,7 @@ const notify = document.querySelector(".notify");
 const correct = document.querySelector(".correct");
 const incorrect = document.querySelector(".incorrect");
 const endResults = document.querySelector(".endResults");
-const initialsInput = document.querySelector("#initialsInput");
+let initialsInput = document.getElementById("initialsInput").value;
 const submit = document.querySelector("#submitScore");
 
 // Buttons given Event Listners
@@ -58,16 +58,15 @@ function answersResults(event) {
   // created these variables they are depreceted without an event
   const choosenAnswer = event.target;
   const correctAnswer = choosenAnswer.dataset.correct;
+  console.log(correctAnswer)
   // if statement for the correct notification or incorrect notification
   // if (!Object.is) {
   //     Object.defineProperty()
   // }
-  if (choosenAnswer === "true") {
-    incorrect;
+  if (correctAnswer === 'true') {
     correct;
   } else {
     //and if the quizers got the question incorrect the timer is decremented
-    correct;
     incorrect;
     // 10 second decrement
     timeRemaining -= 10;
@@ -180,8 +179,21 @@ function time() {
 
 // this function is apart of the event listner created universally 
 function scoreSubmit() {
-    localStorage.setItem('personalRecord', timeRemaining);
-    localStorage.setItem('initials',  initialsInput);
+    let initialsIn = document.getElementById("initialsInput");
+    let init = initialsIn.value.trim()
+    
+    let highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+
+    let newScore = {
+        init,
+        timeRemaining
+    }
+
+    highscores.push(newScore);
+
+    localStorage.setItem( "highscores" , JSON.stringify(highscores));
+    
+    // localStorage.setItem('initials',  initialsInput);
     // window.location will send the quizer to the scoreboard.html
-    window.location.replace('./scoreboard.html');
+    //window.location.replace('./scoreboard.html');
 }
