@@ -5,6 +5,7 @@ A short and fun timed code quiz, the quiz itself works and time is properly decr
 
 ```what I need to do```
 in my scoreboard.js get localstorage item and make a loop!
+have the correct and inccorrect notify properly!
 
 
 ## Table of Contents
