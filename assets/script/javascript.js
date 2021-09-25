@@ -99,36 +99,62 @@ function gameOver() {
 }
 
 const question = [
+    // this array contains the questions that will appear to the quizer
     {
-        question:"",
+        // Arrow function question
+        question:"What are arrow functions? ex: =>",
         answers: [
-            { text: "", correct:},
+            // following correct is the result of the answer choosen 
+            { text: "Functions that shoot arrows.", correct: false},
+            { text: "Arrow functions dont exist nice try!", correct: false},
+            { text: "Concise way to write Constuctors.", correct: false},
+            { text: "Concise way to write functions in JavaScript.", correct: true},
         ]
     },
     {
-        question:"",
+        // 
+        question:"How do you create a function?",
         answers: [
-            { text: "", correct:},
+            { text: "function:myFunction()", correct: false},
+            { text: "function=myFunction()", correct: false},
+            { text: "function myFunction()", correct: true}
+
         ]
     },
     {
-        question:"",
+        question:"How would we call the previous function?",
         answers: [
-            { text: "", correct:},
+            { text: "myFunction()", correct: true},
+            { text: "call myFunction()", correct: false},
+            { text: "myFunction(call)", correct: false},
+            { text: "myFunction().call", correct: false},
         ]
     },
     {
-        question:"",
+        question:"What do we wrap arrays with?",
         answers: [
-            { text: "", correct:},
+            { text: "square brackets []", correct: true},
+            { text: "curly brackets {}", correct: false},
+            { text: "parenthesis ()", correct: false},
+            { text: "Thanos it and use them all to obtain the all the arrays", correct: false},
         ]
     },
     {
-        question:"",
+        question:"Which does api stand for?",
         answers: [
-            { text: "", correct:},
+            { text: "AI Programming Initiative", correct: false},
+            { text: "A Pineapple In pizza is amazing....", correct: false},
+            { text: "Application Programming Intel ", correct: false},
+            { text: "Application Programming Interface", correct: true},
         ]
     },
+    {
+        question:"Carefully Answer... Does Pineapple belong on pizza?",
+        answers: [
+            { text: "NOOOOOO", correct: false},
+            { text: "Of course it does!!", correct: true},
+        ]
+    }
 ]
 
 
