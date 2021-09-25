@@ -40,15 +40,15 @@ function currentQuestionOn(question) {
   // This will present the questions
   questions.textContent = question.question;
   // Passing the arrow function into a button that will be created
-  question.answers.array.forEach((answer) => {
+  question.answers.forEach((answer) => {
     const button = document.createElement("button");
-    button.innerHTML = answer.text;
+    button.innerText = answer.text;
     button.classList.add("btn");
     // if statement checks if the input was correct or incorrect
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
-    answerBtn.appendChild(button);
+    answers.appendChild(button);
     button.addEventListener("click", answersResults);
   });
 }
@@ -76,8 +76,8 @@ function answersResults(event) {
 }
 
 function newQuestion() {
-  while (answerBtn.firstChild) {
-    answerBtn.removeChild(answerBtn.firstChild);
+  while (answers.firstChild) {
+    answers.removeChild(answers.firstChild);
   }
   if (questionOn < question.length) {
     currentQuestionOn(question[questionOn++]);
@@ -168,7 +168,7 @@ function time() {
     // using the let varible created gloabally timeRemaining
     if (timeRemaining >= 1) {
       timeRemaining--;
-      timer.textContent = "Time: " + timeRemaining;
+      timer.textContent = " Time: " +  '' + '' + timeRemaining;
       // if the quizer runs out of time
     } else {
       gameOver.getElementedById = "You ran out of time!";
