@@ -51,16 +51,20 @@
             <p class="incorrect"><em>Incorrect <i class="fal fa-sad-tear"></i></em></p>
         </section>
         <!-- Quiz ends and tester is prompted -->
-        <section class="endResults">
-            <h1 class="gag title"><strong><em>Mouses down!</em></strong></h1>
-            <p class="complete subtitle is-4"><em>The moment of truth, enter your intials to see your score...</em></p>
-            <!-- Form created for tester to input there initials for score -->
-            <form>
-                <p class="intials">Initials here please:</p>
-                <input id="initalsInput">
-            <!-- Button for submitting quiz scores -->
-                <button id="submitScore" type="button">Submit</button>
-            </form>
+        <section class="endResults card section has-text-centered">
+            <div class="card-content box">
+                <div class="content">
+                    <h1 class="gag title"><strong><em>Mouses down!</em></strong></h1>
+                    <p class="complete subtitle is-4"><em>The moment of truth, enter your intials to see your score...</em></p>
+                    <!-- Form created for tester to input there initials for score -->
+                    <form>
+                        <p class="intials"></p>
+                        <input id="initialsInput">
+                        <!-- Button for submitting quiz scores -->
+                        <button class="button is-info" id="submitScore" type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
             <!-- Form ends -->
         </section>
     </main>

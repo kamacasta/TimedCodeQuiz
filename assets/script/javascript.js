@@ -10,7 +10,7 @@ const notify = document.querySelector(".notify");
 const correct = document.querySelector(".correct");
 const incorrect = document.querySelector(".incorrect");
 const endResults = document.querySelector(".endResults");
-const initials = document.querySelector("initialsInput");
+const initialsInput = document.querySelector("#initialsInput");
 const submit = document.querySelector("#submitScore");
 
 // Buttons given Event Listners
@@ -90,11 +90,11 @@ function newQuestion() {
 function quizEnded() {
   // we want the time remaining on the countdown timer to be the score
   score = timeRemaining;
-  quiz;
-  prompt.setAttribute("style", "display: none");
-  endResults;
-  timer;
-  gameOver;
+  quiz.setAttribute("style", "display: none");
+  notify.setAttribute("style", "display: none");
+  endResults.setAttribute("style", "display: block");
+  timer.setAttribute("style", "display: none");
+  gameOver.setAttribute("style", "display: block");
 }
 
 const question = [
@@ -181,7 +181,7 @@ function time() {
 // this function is apart of the event listner created universally 
 function scoreSubmit() {
     localStorage.setItem('personalRecord', timeRemaining);
-    localStorage.setItem('initial', initialsInput.val('') );
+    localStorage.setItem('initials',  initialsInput);
     // window.location will send the quizer to the scoreboard.html
     window.location.replace('./scoreboard.html');
 }
