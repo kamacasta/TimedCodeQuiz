@@ -1,7 +1,10 @@
 # TimedCodeQuiz
 
 ## Description 
+A short and fun timed code quiz, the quiz itself works and time is properly decremented when question is answered incorrectly, but I was having trouble with the scoreboard page working I think it would have been eaiser if I used a anchor tag for the scoreboard page, but the record time and initials of the quizer comes up in local storage!
 
+```what I need to do```
+in my scoreboard.js get localstorage item and make a loop!
 
 
 ## Table of Contents
