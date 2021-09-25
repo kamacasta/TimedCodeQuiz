@@ -9,6 +9,7 @@ const answers = document.querySelector('.answers');
 const notify = document.querySelector('.notify');
 const correct = document.querySelector('.correct')
 const incorrect = document.querySelector('.incorrect')
+const endResults = document.querySelector('.endResults')
 const initials = document.querySelector('initialsInput')
 const submit = document.querySelector('#submitScore')
 
@@ -87,8 +88,48 @@ function newQuestion () {
     }
 }
 
+function gameOver() {
+    // we want the time remaining on the countdown timer to be the score
+    score = timeRemaining;
+    quiz;
+    prompt.setAttribute('style', 'display: none');
+    endResults;
+    timer;
+    gameOver;
+}
 
-
+const question = [
+    {
+        question:"",
+        answers: [
+            { text: "", correct:},
+        ]
+    },
+    {
+        question:"",
+        answers: [
+            { text: "", correct:},
+        ]
+    },
+    {
+        question:"",
+        answers: [
+            { text: "", correct:},
+        ]
+    },
+    {
+        question:"",
+        answers: [
+            { text: "", correct:},
+        ]
+    },
+    {
+        question:"",
+        answers: [
+            { text: "", correct:},
+        ]
+    },
+]
 
 
 
