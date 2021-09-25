@@ -6,6 +6,7 @@ A short and fun timed code quiz, the quiz itself works and time is properly decr
 ```what I need to do```
 in my scoreboard.js get localstorage item and make a loop!
 have the correct and inccorrect notify properly!
+had to comment out window.location on the submit button at the end of the quiz due to the fact data not going over to the scoreboard, I had to create an array and put the remaining time and initials in the array!
 
 
 ## Table of Contents
@@ -36,7 +37,7 @@ If there is any questions please take a look at my repo https://github.com/kamac
 
 ## Credits
 
-Colaberated with Marco Avila https://github.com/mavila6
+Collaborated with Marco Avila https://github.com/mavila6
 
 ## Author
 
